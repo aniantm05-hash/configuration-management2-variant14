@@ -2,6 +2,7 @@
 
 import unittest
 
+from depviz.graph import build_graph
 from depviz.markers import environment, marker_active
 from depviz.pypi import PyPIRepository
 from depviz.requirements import parse_dependencies, parse_requirement
@@ -70,6 +71,26 @@ class MetadataTests(unittest.TestCase):
         self.assertEqual(calls, ["https://example.test/pypi/some-package/json"])
         with self.assertRaises(ValueError):
             PyPIRepository._info({"info": {}})
+
+    def test_versions_at_depth_boundary_use_real_metadata(self):
+        """Запросить версию B, но не раскрывать его зависимость C."""
+        calls = []
+        documents = {
+            "a": {"info": {"version": "1.7", "requires_dist": ["B>=2"]}},
+            "b": {"info": {"version": "2.9", "requires_dist": ["C"]}},
+        }
+
+        def fake(url):
+            """Вернуть контролируемый ответ собственного HTTP-клиента."""
+            name = url.split("/")[-2]
+            calls.append(name)
+            return documents[name]
+
+        repository = PyPIRepository("https://example.test/pypi", fake)
+        graph = build_graph(repository, "a", 1)
+        self.assertEqual(graph.versions, {"a": "1.7", "b": "2.9"})
+        self.assertEqual(graph.edges, {"a": ["b"], "b": []})
+        self.assertEqual(calls, ["a", "b"])
 
     def test_invalid_api_versions_are_rejected(self):
         """Не подставлять фиктивную версию, если API вернул мусор."""

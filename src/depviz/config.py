@@ -38,7 +38,7 @@ def parser():
     result.add_argument("--repository", default=DEFAULT_REPOSITORY)
     result.add_argument("--test-repo", action="store_true")
     result.add_argument("--max-depth", type=depth_value, default=DEFAULT_DEPTH)
-    result.add_argument("--stage", type=int, choices=range(1, 3), default=2)
+    result.add_argument("--stage", type=int, choices=range(1, 4), default=3)
     return result
 
 

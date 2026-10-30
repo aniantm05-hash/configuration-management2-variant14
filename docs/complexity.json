@@ -1,0 +1,709 @@
+{
+  "tool": "Radon 6.0.1",
+  "limit": 10,
+  "maximum": 9,
+  "blocks": [
+    {
+      "file": "src/depviz/cli.py",
+      "line": 15,
+      "name": "repository_for",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/cli.py",
+      "line": 22,
+      "name": "execute",
+      "complexity": 6
+    },
+    {
+      "file": "src/depviz/cli.py",
+      "line": 40,
+      "name": "main",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 15,
+      "name": "package_name",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 22,
+      "name": "depth_value",
+      "complexity": 3
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 34,
+      "name": "parser",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 45,
+      "name": "validate_test_source",
+      "complexity": 3
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 53,
+      "name": "validate_url_shape",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 66,
+      "name": "validate_url_details",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 73,
+      "name": "validate_source",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/config.py",
+      "line": 81,
+      "name": "read_options",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/graph.py",
+      "line": 18,
+      "name": "record_cycle",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/graph.py",
+      "line": 25,
+      "name": "build_graph",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/graph.py",
+      "line": 30,
+      "name": "visit",
+      "complexity": 7
+    },
+    {
+      "file": "src/depviz/graph.py",
+      "line": 54,
+      "name": "package_label",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/graph.py",
+      "line": 59,
+      "name": "adjacency_line",
+      "complexity": 4
+    },
+    {
+      "file": "src/depviz/graph.py",
+      "line": 70,
+      "name": "adjacency_text",
+      "complexity": 4
+    },
+    {
+      "file": "src/depviz/graph.py",
+      "line": 7,
+      "name": "DependencyGraph",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/markers.py",
+      "line": 38,
+      "name": "environment",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/markers.py",
+      "line": 57,
+      "name": "operand",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/markers.py",
+      "line": 66,
+      "name": "compare",
+      "complexity": 7
+    },
+    {
+      "file": "src/depviz/markers.py",
+      "line": 84,
+      "name": "evaluate",
+      "complexity": 6
+    },
+    {
+      "file": "src/depviz/markers.py",
+      "line": 97,
+      "name": "marker_active",
+      "complexity": 4
+    },
+    {
+      "file": "src/depviz/network.py",
+      "line": 11,
+      "name": "fetch_json",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 10,
+      "name": "PyPIRepository",
+      "complexity": 3
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 13,
+      "name": "__init__",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 20,
+      "name": "info",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 29,
+      "name": "version",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 33,
+      "name": "dependencies",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 38,
+      "name": "_info",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 13,
+      "name": "__init__",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 20,
+      "name": "info",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 29,
+      "name": "version",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 33,
+      "name": "dependencies",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/pypi.py",
+      "line": 38,
+      "name": "_info",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/requirements.py",
+      "line": 19,
+      "name": "normalize",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/requirements.py",
+      "line": 24,
+      "name": "parse_requirement",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/requirements.py",
+      "line": 41,
+      "name": "parse_dependencies",
+      "complexity": 8
+    },
+    {
+      "file": "src/depviz/requirements.py",
+      "line": 11,
+      "name": "Requirement",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 11,
+      "name": "validate_package",
+      "complexity": 3
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 19,
+      "name": "validate_children",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 31,
+      "name": "validate_record",
+      "complexity": 3
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 41,
+      "name": "validate_graph",
+      "complexity": 5
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 54,
+      "name": "read_graph",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 65,
+      "name": "TestRepository",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 68,
+      "name": "__init__",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 73,
+      "name": "record",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 79,
+      "name": "version",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 85,
+      "name": "dependencies",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 68,
+      "name": "__init__",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 73,
+      "name": "record",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 79,
+      "name": "version",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/testrepo.py",
+      "line": 85,
+      "name": "dependencies",
+      "complexity": 2
+    },
+    {
+      "file": "src/depviz/versions.py",
+      "line": 19,
+      "name": "validate_version",
+      "complexity": 3
+    },
+    {
+      "file": "src/depviz/versions.py",
+      "line": 28,
+      "name": "release",
+      "complexity": 3
+    },
+    {
+      "file": "src/depviz/versions.py",
+      "line": 35,
+      "name": "numeric_compare",
+      "complexity": 1
+    },
+    {
+      "file": "src/depviz/versions.py",
+      "line": 44,
+      "name": "single_match",
+      "complexity": 9
+    },
+    {
+      "file": "src/depviz/versions.py",
+      "line": 66,
+      "name": "satisfies",
+      "complexity": 5
+    },
+    {
+      "file": "tests/test_cli.py",
+      "line": 14,
+      "name": "CliTests",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_cli.py",
+      "line": 17,
+      "name": "test_default_graph",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_cli.py",
+      "line": 27,
+      "name": "test_stage_four_and_five_are_unavailable",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_cli.py",
+      "line": 35,
+      "name": "test_default_stage_three",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_cli.py",
+      "line": 17,
+      "name": "test_default_graph",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_cli.py",
+      "line": 27,
+      "name": "test_stage_four_and_five_are_unavailable",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_cli.py",
+      "line": 35,
+      "name": "test_default_stage_three",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 12,
+      "name": "ConfigurationTests",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 15,
+      "name": "reject",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 22,
+      "name": "test_valid_defaults",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 28,
+      "name": "test_invalid_parameters",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 44,
+      "name": "test_test_mode",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 15,
+      "name": "reject",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 22,
+      "name": "test_valid_defaults",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 28,
+      "name": "test_invalid_parameters",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_config.py",
+      "line": 44,
+      "name": "test_test_mode",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 12,
+      "name": "sample",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 17,
+      "name": "GraphTests",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 20,
+      "name": "test_chain_and_depth",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 29,
+      "name": "test_diamond",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 37,
+      "name": "test_cycle",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 43,
+      "name": "test_shorter_path",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 50,
+      "name": "test_isolated_and_unknown_root",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 56,
+      "name": "test_graph_labels_include_all_versions",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 67,
+      "name": "test_boundary_and_cycle_have_versions",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 77,
+      "name": "test_invalid_test_graph",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 20,
+      "name": "test_chain_and_depth",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 29,
+      "name": "test_diamond",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 37,
+      "name": "test_cycle",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 43,
+      "name": "test_shorter_path",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 50,
+      "name": "test_isolated_and_unknown_root",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 56,
+      "name": "test_graph_labels_include_all_versions",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 67,
+      "name": "test_boundary_and_cycle_have_versions",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_graph.py",
+      "line": 77,
+      "name": "test_invalid_test_graph",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 12,
+      "name": "MetadataTests",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 15,
+      "name": "test_requirements",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 25,
+      "name": "test_null_metadata",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 35,
+      "name": "test_markers",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 51,
+      "name": "test_versions",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 59,
+      "name": "test_json_cache_and_url",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 63,
+      "name": "fake",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 75,
+      "name": "test_versions_at_depth_boundary_use_real_metadata",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 83,
+      "name": "fake",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 95,
+      "name": "test_invalid_api_versions_are_rejected",
+      "complexity": 2
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 15,
+      "name": "test_requirements",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 25,
+      "name": "test_null_metadata",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 35,
+      "name": "test_markers",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 51,
+      "name": "test_versions",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 59,
+      "name": "test_json_cache_and_url",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 63,
+      "name": "fake",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 75,
+      "name": "test_versions_at_depth_boundary_use_real_metadata",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 83,
+      "name": "fake",
+      "complexity": 1
+    },
+    {
+      "file": "tests/test_metadata.py",
+      "line": 95,
+      "name": "test_invalid_api_versions_are_rejected",
+      "complexity": 2
+    },
+    {
+      "file": "scripts/check_complexity.py",
+      "line": 9,
+      "name": "walk_blocks",
+      "complexity": 2
+    },
+    {
+      "file": "scripts/check_complexity.py",
+      "line": 17,
+      "name": "complexity_records",
+      "complexity": 4
+    },
+    {
+      "file": "scripts/check_complexity.py",
+      "line": 37,
+      "name": "main",
+      "complexity": 4
+    },
+    {
+      "file": "scripts/check_style.py",
+      "line": 12,
+      "name": "function_errors",
+      "complexity": 4
+    },
+    {
+      "file": "scripts/check_style.py",
+      "line": 25,
+      "name": "inspect_file",
+      "complexity": 6
+    },
+    {
+      "file": "scripts/check_style.py",
+      "line": 42,
+      "name": "main",
+      "complexity": 7
+    }
+  ]
+}
